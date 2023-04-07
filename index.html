@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="desarrollador frontend, HTML5, CSS3, Bootstrap, Javascript, React, SEO, Volitans Agency">
+    <meta name="description" content="Conoce a Luciano Sosa, un joven desarrollador frontend de 16 años con experiencia en HTML5, CSS3, Bootstrap, Javascript y React, y que trabaja como SEO en Volitans Agency">
+    <title>Luciano Sosa</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="./img/favicom.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav-container" id="nav">
+        <div class="nav-logo">
+            <H1>LUCIANO <span> SOSA</span></H1>
+        </div>
+        <ul class="nav-list">
+            <li class="nav-list-element"><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li class="nav-list-element"><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+            <li class="nav-list-element"><a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+            <li class="nav-list-element"><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+        </ul>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAFJJREFUSEtjZKAxYKSx+QyjFhAMYfoH0bf/P/4TdBYeBVyMHCiOxvABzS2gxPXY9NI/DmjuA5rHAc0toHkQDX0LaB4HNLdg6MfBqA/QQ4DmpSkAU1QYGaGxFiQAAAAASUVORK5CYII="/>
+        </div>
+    </nav>
+    
+    <main class="main">
+        <article class="inicio" id="inicio">
+            <div class="inicio-card">
+                <img src=".\img\img-perfil.jpg" alt="img-perfil" class="inicio-img">
+                <h2>Luciano <span>SOSA</span></h2>
+                <h3>Desarrollador Web</h3>
+                <ul class="inicio-list">
+                    <li class="inicio-list-element"><a href="https://www.instagram.com/lvk0zz/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAeZJREFUSEvNlU9O21AQxn/zFthxuqCbbhNOAJyAdtNtwwEqpTfgBoQTVOy6K5wAWHbVcALSExT1AoSKxDELD5rwXvXyB8dZRHQkK4o9nm++b958FjYcsuH6vA5Arnm7xB0LugfYVRUDRew6fSNbg/nEBQa55l1FvvvEa2Co6MKL9lwQA98GDp7/65eGNM5ikBmAB33cc5Q3wHVB0nkrMqwzI2OsyCWwW+L2YyYzACMtzgTtFCTtOsVzffyslCfAvaCHivxW5LwpSTc0NgMw1sktcJtJ+n6+85EWHQe7dr+EQVOSqwedfHTwA/iTSdoa66QPtDJJd14CUOA0k/QoJNypbicUP5cMuw/yTdG/DveuIVvnHuAgk/Rf4/MMVNGTpjR6AWCsExuwadxtSmI6Y2wEtWHeZJJ+iHKNQX0AX+hCkcNQPBQLpy1+tjaDkeY9QY5jynPS3cWM/0eAqdabk8jk8ENu+SFf2T2v/1fgV3yka0n0wjG10zHdgSgWtr0OQOWiQemNz9miTY9sHB6gnUnaXrpo3io+FSQ7dawiLu79qNoqIrPre2c0RivDF7+wba80u2iAwa5N+6EgS+1a0eBZ09+Vdh1aNSaCHslzgdYKCvdAv8T1an1wVuqxZsLrfJPXbLIy/QmHNEEovakTvgAAAABJRU5ErkJggg=="/></a></li>
+                    <li class="inicio-list-element"><a href="https://twitter.com/SosaSLuciano"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAZFJREFUSEvdVf9NwmAQfa+JtAUTdQLZQJhAnMA6gTqBOoEwgR2BDYQJdANhgzIBmAilmPTMmZb0JzRN+If78+vde9+9u++VOHDwwPg4MoK5yPkFudglm+ZY2DwJxAHQAeARHNo0B1q3lMBp0RzFGCmJVrL2QhjOKRuTMpKVrD8BXBd81xolfGnScnMEP7LpGAi/ACwIubNpK1AqEjll/BMBpwK68SWzHUii0g1gDpKSafuEvO+Q8JsQJ3m5LIFqd5sBGBGi556AXQBvOwjGTVo6m21sCXR4J/htGwgV7LLO+xDIoEW7X0pgIpjXAU7UpAas57ktqnt7BQthdLMbmCKItkS356xGJ7MmrXa2LmcV0abcA0gNqwJhTp6cRHrgi98T8KMCYDJlFsDsFLlAodktxe8TfK1KQshN0cMs7CAG1bVtYOMSonKVBiGPNu1hWUJhB5FMT3vmoK/2eRd4qoMIVE3qqoI04wjc25eb68AX/yGE0SNEnTEmm6oJAvi3DZv2XuCY+Mj+aPv0rPP94BL9AVa4mhnWxSLQAAAAAElFTkSuQmCC"/></a></li>
+                    <li class="inicio-list-element"><a href="https://www.linkedin.com/in/luciano-sosa/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAUpJREFUSEvtlU9Kw0AYxd9Lxc4Mgj2CdWGX6gmsN/AIrgUXggeoBxBEcO0RxBvoDerOhYt6Av+gySA0n0xIQsYEqxnrqt8qmWHe78v7XhJizsU566MGsGLXBd1Uk5O/gHuAWOw5gMNc+NRQHYdCSsCr2MEScF8VJGRNUz+GQEqAFTtI64C+pg6yyrPoXewFgYO84zNDdRTSvTvbNOQNAKmieggVrwESSYYAxG1M0XlZ4fLYXb/Jx1YH09Xq+pNIT8FuAtEwBcYR0rsmO7+mKBPP69ZQOSBisTcAdop1QkYCXgHo+aHgSLN74q9V7mKxPwG4oTthT7yQIWRXU7uGsmrzBLNGc22o9kIBpUgiyb6AlxXqxFD1gwApou0iAPmMngFkIXBlqEpnWllUFWgIwQLge7ywqOlT4aXkVxbNekXb7P//T79Nl9+d+QRvD9cZ144/EgAAAABJRU5ErkJggg=="/></a></li>
+                    <li class="inicio-list-element"><a href="https://wa.me/+5491133328223"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAX5JREFUSEvVlcFVwkAURd9jkxAWagViBWIFYgWGCpQOtAJjB1CBUIFagdgBdmAHZkNINnzP50x0EhJMghyPf5kz8+68mfd/iD0X96yPvwFEEo8AHCdwhkdkuIvLjIMPkUMHySOAvhGdeXQvfg0QSTwHcGoLCjjp0Bk2hWQcRBJLkdAukEoAA7316Orb1Ko8YAbgvETh2aPr11IHsjFdSDIh5KpA5C2B02+SqIyDhSQ+IZoiuxqLq0hRTN8BHKQEQk7abOu3RrXRyflrEsh9h+2gkXregYosZdkVUPshdREScpZ3YZryAYA247jsAIWzaCHLgOCdtWlOyCCFGPEXAD1ds61PSoddJPETgEsLEhIcAaupgBqEtXhaZZBSgDml9kVmdPzwFrMEzsCO89ZxbSDqpKz5NngCTjt0rr9TWCEe5k1u7Phu2Tb26OradVX+4Wi6VmgFhOi4+OqTHOjVo5uO+nqAVEivzUXsr9DqE9K1rq+w4ys7qHCThUv+P+ATP3qNGXvmVYoAAAAASUVORK5CYII="/></a></li>
+                    <li class="inicio-list-element"><a href="luco1#3317"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAbVJREFUSEvdVctVAkEQrOLgfjioEagZkAEagWSgGagRiBFoCGsEQgYYgYYAEYAHll0PlK9hZ9+wLPjEz8F5by47M13dVdW9xC8v/nJ8/GOAsXSwh/c2oVNC/YjRwKdzqrxDqC1w0GTQ30T1GkVF4HtCHQAHxcMhANv+OgZg29YEQBIzvKkCrQFMNesSvN1R/JuY4YP/dgVgptmxwBcv86/iTHIEJ4ekVbRYKwBT5Qmhi69G9e8Lumsy6tYCpMoMef87AKZVzPBkDaBwxVNN8LctoLVnhM6c60qKUmUmzlUFYCFaoY3Z9Kg4H5l9I0bDVNk1gPtNNPkAFqDtX4wZlue+PgIfmwwu3d1UmSqJPccMT1dEruM/R3DoHJEq6wE4LwL1Y4bWJ7C+CZCPKwClDn4F1SzsTU9g0gBagkpnLDNjdw68ErJKFmB11X8GsLOhHL1/CmBuMBpcHwy5pIUCjQabO6WLzO+EEitRy9Hi5tKboAfXbGujYo5G1+vmUY6g5be+z1khsA1Bl1Sf0LXZt7aT3Ufz/Ry4bACD6piuimINCsxbDSDxA28F2FnZmof/+Jf5UzR9ABkytBm7ajKUAAAAAElFTkSuQmCC"/></a></li>
+                </ul>
+            </div>
+        </article>
+        <article class="sobremi" id="sobremi">
+            <h2>Sobre Mi</h2>
+            <p class="sobremi-text">Soy Luciano Sosa, un joven de 16 años apasionado por el
+                desarrollo frontend y <strong>SEO de Volitans Agency</strong> . He demostrado 
+                habilidades sobresalientes en <strong>HTML</strong> ,<strong>CSS3</strong> ,<strong>Bootstrap</strong> , <strong>Javascript</strong> y <strong>React</strong>,
+                creando <strong>sitios web</strong> y aplicaciones atractivas y funcionales para mis clientes.
+                Creo que la pasión y la dedicación son claves para el éxito en cualquier ámbito.
+                Espero inspirar a jóvenes en el desarrollo frontend y el marketing digital para 
+                que persigan sus sueños y logren sus objetivos. 
+            </p>
+            <div class="sobremi-container">
+                <div class="sobremi-izq">
+                    <h3>Datos Personales</h3>
+                    <ul class="sobremi-datos">
+                        <li class="dato"><span>Nacimiento</span>28 de Marzo de 2007</li>
+                        <li class="dato"><span>Telefono</span>+54-911-3332-8223</li>
+                        <li class="dato"><span>Email</span>sosasipos@gmail.com</li>
+                        <li class="dato"><span>Instagram</span> @lvk0zz</li>
+                        <li class="dato"><span>LinkedIn</span> @luciano-sosa</li>
+                        <li class="dato" ><span>Github</span>@luco07</li>
+                    </ul>
+                </div>
+                <div class="sobremi-der">
+                    <h3 class="mis-intereses" >Mis intereses</h3>
+                    <div class="sobremi-intereses">
+                    <div class="primera-fila">
+                        <div class="interes"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAXdJREFUSEu1ld1RwkAUhc/xBQJFSAfagWMHdiBWQOgAKjBWoFagdoAd2IHQATyQBB88zjJJJgm7SRbhzjDDwN377Z77R5zZeOb4aAUkSsa/uLghdA3AfIwtAKwJPQUMzHenOQFb7e4IPQIYtbxyKXA6ZO/d5mcFxEojABMf+QjOAvbm9TMHgGOC50EFzYcMZmVIBZDJ8ua4+XTAfhQrDQEY6axG6LaclwogVroEcGk7OWB/75soGQn8dsTfAJiZi+T/FwBTLQKfG3QPd+i99vEzEVSRITvzQSgMGJhLFlYAttq9ELr3SWzmuyI0dpVrAYiVfgG48gBsBEX1pDqrKFYqj+BWORr7wBPwTmha17sN4CvRmmBka65TJ7nbqGhpsi7pWRB6cJapidDUaF0Imc++4w8azfxwglegcVRkr/CepJ2HXe545EStSGOVqKxzJpd5jXX4lXxXAkOvhVMHATDbzazLfJR8ZiszOnplelRNo2vr0v8v6A/UAqAZFCPEMgAAAABJRU5ErkJggg=="/> <br> Juegos</div>
+                        <div class="interes"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAU9JREFUSEvVlMFZg0AQhd9cXMCDsQKhAu3ApAJbMB3YkdqBHYgdaAWSCkwuwHoZv+HbxTAqsCEc3BMfC++ffW92CDMvmlkfg4AP5oWBfQZwpYp5tTCrc6JtX5G9gB5xrzkI+ROgxN8szNJX6/ZyAJcAeiEtoOJqyaB7AKk6ckfc7ynI/i8FgdcxxVLAdwYl1wWAizHiYyAJRZkGsLxIKBoMvi/UkuuOTiumN/ZFnB1in+8k8X39WwcFA5z4O4CFqnxrYTINCQaUXD8BuAHwQuBbgTDoAcA1gx5PyTTv/DoE0IRP4CymWJ5RcZUySE5V+DDnAmwSijptfcgJvEW59LezSAKXezPdIheyWHOmQt5ZmHRyyCLqIBJs06YMyj9xcneUNg0d58EZHBMgc137HKrvv2+7S09T8VkPvFDIRi7kj2kaqjL2+0mTcwzk/wO+ABzJ7xkyjTqdAAAAAElFTkSuQmCC"/> <br> Fotos</div>
+                    </div>
+                    <div class="segunda-fila">
+                        <div class="interes"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAUdJREFUSEvdlcFRw0AMRb9ySNY7OSQVQDqACpJUQOqAA1ABQwdwIFcoAToIFYQOCBXgA2zWHCLGntmdzdqJNXjMIT5aX3r60sgmtPxQy/VxoIA1rycMugEwEY5wQeDbhJJFrC+N6JN50EP2DmAgLO5kaYbeaEiUhnklgGF7B+ASwIsmNZNADNtnAGcA7jWpqzrACsDRBp3TPnXfJIAv/jnpYLMEsNKkRjsBgfBDkzqWFHcaw7aysa0RBeMpWa2D7cr1gG/OZgR+/MNyY3ZK4OuEkqc84AHOYl2nwniqSQ1jAOcvNKlG123YbtUJHfiAYfsA4BzAXJO62Nd1rJUCCpjEkSvotFJAuw6Ei6yU7XNQHEqT4kGuP1S/5OCKGzMIPHVf1viSxcuNu4iX7eL/Dsh/GGMAr5qU9GdTNGvYVuY2ulrJsloH/AJPGbMZXuwDzgAAAABJRU5ErkJggg=="/> <br> Autos</div>
+                        <div class="interes"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAgRJREFUSEu1leFx00AQhb/1j8iyf5BUQKggSQVRKsCpAKcCoAJCBYEKcCqADrArwKkAdZAwQyzLP7TMwp3nfD5jKTPRL43u7r3d997qhGd+5JnxeRJBpdUxcN7QKwQ9VqTs0UxzyW/jgjsTPGp1LciHHZ3Pa7KLI5EHv96a4F71MKP+Dpy6wzNFp9CbC1oAY+AFMB9I/6wTQQT+IOhlLvk07OK3rk57ND/smyKXQ8m+2fveDhKVG8BkKNlVLNOj1hNB3wCfB9J/t5cgAr8DJsCNq3KLJPBnNpC+yba7g7hyQV/lkpeVVmNFvvw7rBehVAtdfgLeKnI7lMw8SROkZDHzfEKMxA7nkltH62ehyxJ4CbwfSN/ItgliWQQdKWKGnYQkCf1Hgn617zXZkY/qhsmJyv9W4r5bak7ChHgSt/4TOAwN3uogMOmXy7TpfGVSGMgBq8LHLwL383FXkxXJQXNV3HvzGnpjF7k1SSxLLGcMvtHBQpeW25swAT7XvouQoA34BsEusEqrIp7atuBxB2bieZztp8gSnlmnyA9JSo62hsbFxBL5HJc12VmYBNtoUrkJtrtgKy0p8K2YLnQ5dwNVCjKBZqqI/Z7tvzJyILOabBQX0IrAmWfj/zp1QNGPQ8mvd4H9V6Jw0eRooBCk8JfKioNp26qTJnepqsvevRdOF7DU3j+bhCwoxI6CawAAAABJRU5ErkJggg=="/> <br> Comida</div>
+                    </div>
+                   
+                    <div class="tercera-fila">
+                        <div class="interes"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAXVJREFUSEvtldtNAlEQhv+fl73wQKhA6IAOxA7oQKhAOxAqUCtwrcASxAqkBOgAE9mLD4yZdc8G2bO7ZJEYE+dpw1y+ufwnECc2nrg+agGRRD0BrwAMAQyyhhYA5oTce/SWVU1WAkKJ7wBo8VIjOPXozMoCSgGhxHMA55oo4GML2yCGu+iS60ii4RatMSGXmT9o05nYIFZAKPE1gFsAb4SMPHoKK9i7fAxa2KqvI5BZm950P6gAyJJeNZCQi7LippBOI+AzgHUCp68T7kIKgI1EU4I3upY2nfEhKttIEui6bFMUAGb3h3Rv4BtJRoQ8AXjx6aracrMBdMROAqe7P27VNKHEon6f7reaNoA1sG5Vvw/I1PAAoGdGLevKTLPrN98AloRMjPryFYUS65M/M8m6y4YALbH06fa/pJ7ZTgfpL0cC8mP/A3JJ21a8f4P0gf3QkVc+3VSN+Q0ymQZGSUcceUXIuCDTupfa1F/7l9m0sMn7+4BPvbP8Gb+/GdwAAAAASUVORK5CYII="/> <br> Musica</div>
+                        <div class="interes"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAFVJREFUSEtjZKAxYKSx+QyjFqCE8Lf/P/6DBLgYOeAhQ9UgGnoWoLuY6j4YehYQcjHFQTT0LCDVxSQH0dCzgFIXEwyiUQsGPohoUT9TtcLB5kCaWwAAf5HcGYhACs8AAAAASUVORK5CYII="/> <br> Tics</div>
+                    </div>
+                    <div class="cuarta-fila">
+                        <div class="interes"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAmJJREFUSEvFVbFuE0EQfe9AvvPaUkhFOsIXxClCi/MHoNDH9EiQ/ADmB5Ig0eP0RMAX4BoK7D9IOqgIkn0+W3CD5rJ7WZ/vYiIRcdXu7N68mTdvZokb/njD/rEUYCzTRwGwIZA2gJYNaECwnwKDBsOPVwVZCTCSWStA+tZzWuVnkCJ42mRtUHahFGAsky7Bl/aHM4H0CL4AsGJtPwVyRLAD4J7aCHbrDF8VQRYAYkmOADy3F/cMI93jh8idENOerqcIO6vkua5jSRT40N5/bRjpPv/mAJRvQt7raYpgsyrtYpSWzq9qF/Bxg+EHd2cOIJbk1KacR/63KvMyOTWM7i8ATGTSEVCLem4YrZY5nslsS+011r6UnceSKG0rfhZ5BmOZ9gjZvSiYbNdZ7/tOYkn2ABxY275h5HjPTBOZtAX8ZGk6bjBUAVz2QSyJymzDOugbRtu6HsloLcDtNwB2ClGfpPj1rMnmN1tsDeihvTMwjDaLAOIcCJhHEEu8AwTvymuRPjE0J3rmM6B7wyhjJ6colsQBDKcI206GNjqN8m4B5LthtOZsVsaaRcZCGUBGUVFmFwCzAyDVGnhfcGhY2/ctnsyHhlE2VsqKvCDRsYy3iFuffWeC3w8abMypyUnVpzgH8GQ6p+Ny7sutro9KZWq5/heNdmYYrbsQKkfF5YXFnnBnvvY9BVaPCpuFP+zUlPdEkZhYEl/7enz1sHMOCuM6G8VAelxnXSnUrl0Hgl2BdD3Q0vm17MHR8ey6u6rewxRB51oPTlHbQNoiOPdkCqQPBPpk5qO5LIKlb/J1ZPpfAP4ArmASKE5jTB0AAAAASUVORK5CYII="/><br> Deportes</div>
+                        <div class="interes"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAIpJREFUSEtjZKAxYKSx+QyjFhAMYZxB9O3/j/8w3VyMHFjVEaNmmFnw7f+PAwwMDPagICHG++hqoPwDXIwcjrDgRQkimAYKLWBAjjP6WYDDuwSTIXJKwxascB/Q3AKQS4Z2HEB9QI1kepCLkcMBazJFjlFy8gG2FDHMigqiEz0JCkdrNIKBRfMgAgD7+aoZdYcXjAAAAABJRU5ErkJggg=="/> <br> Gym</div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="portafolio" id="portafolio">
+        <h2>Mi trabajo</h2>
+            <div class="card-grupo">
+                <div class="card">
+                    <img src="./img/Termo-dark.png" alt="trabajo-termos">
+                    <p>
+                        <span>Termos Stanley dark</span>
+                        <br>
+                        La versión clara de la Landing page que vende productos
+                    
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="./img/TermosLight.png" alt="trabajo-termo-light">
+                    <p>
+                        <span>Termos Stanley Light</span>
+                        <br>
+                        Una minimalista y elegante Landing page que necesita tu producto
+                        
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="./img/otra-pag.png" alt="trabajo-extra">
+                    <p>
+                        <span>Landing page Personal</span>
+                        <br>
+                        Una landing page que demuestra todo tu potencial con un diseño armónico
+                    </p>
+                </div>
+            </div>
+        </article>
+        <article class="contacto" id="contacto">
+        <h2>Contacto</h2>
+        <div class="contacto-contenido">
+            <div class="izq">
+                <form>
+                    <div class="contacto-section">
+                        <input type="email" name="E-mail" id="email" size="35" placeholder="                      Ingrese su email">
+                    </div>
+                    <div class="contacto-section">
+                        <input type="text" name="nombre" id="nombre" size="35"  placeholder="                    Ingrese su nombre">
+                    </div> 
+                    <div class="contacto-section">
+                        <input type="text" name="mensaje" id="mensaje" size="35"  placeholder="                            Mensaje"> 
+                    </div>
+                    <button id="contacto-enviar" type="submit"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAUVJREFUSEvllc1Nw0AQhd/4AN5cMJUQKiEdQAmUABXgdOB0YDoIFeB0ECrAkcBycvCgQWtE1t7s2Eq4sJIv1vh9++bPhBMfOrE+/hZQcV0AuCDwgyGzOIa7PQcV16UArPCaQFmNs/klkbwfdVxADuDGUSoJlI4FuYB7AE+eq5YMyiM0j4bMWmtnD/DBu2mE5jX0MYMyLajTRU4dQqycwHNDZukL7ACsizsA8rQFD4GWBJbUdUAH5+CTtzMCC8gtvA9YEDj93eKqQXtnTs6xbV1dhewAKCYUX0vcEMCtTdtUAVhNKP6O06RIhGcKUQlZ2RRlbbyvyO1tE6Xwi10v4SIPbNNne2Ndmw4YtEWERhZicKKHrIqNXRUq4d4aVFz3LbsNg9Md4nTMVj20rt8YnI0V9jmQH05iO+Kn1ZSd1BumGrT/DfgCneaOGb34XT4AAAAASUVORK5CYII="/></button>
+                </form>
+            </div>
+            <div class="der">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13140.105702267194!2d-58.7422873!3d-34.5781979!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3ce469a5a9bb01e0!2sColegio%20Parroquial%20Santa%20Mar%C3%ADa%20Del%20Trujui!5e0!3m2!1ses-419!2sar!4v1674301631370!5m2!1ses-419!2sar" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        </article>
+    </main>
+    <footer>
+        <button><a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAUJJREFUSEvllM1RwzAQRr8vBywrHEIHoQLiCsAVQCoBKiBUAFRCOiAdJFRAOsAH4h8OWUYZOxkb23Kwc8iwJ894tW/1tBJx4OCB6+MfAT5FBg6SN6M0geOfkUETvY0VhRI/A7hNi75oqrvOAJFEVwJuus+CEN+lO7NBrDtI1cwBDAvFlgkcz6bKCgglngK4ruh0qqnGdbuoBawkuSHkta6AgOM+HdNEaVQCUjUfAAYWz0EC57xKVSUglNgc4KXtENP/M03ll+WWAkKJzQg+NSyepd1rKjPKufgFiCQaCmimxqamWCsgxHPpLvPjXEgLJV4AuNiz+yx9oam8SsBKognBhz8W3ywTyGOf7mR3IdOvL/ke9bA2alrHGj3vlCfGxO65bqmm2NRW1faQOwa8a6pRbgetvex7k7sCWh+7tqDjB/wA4gVeGSSFDSkAAAAASUVORK5CYII="/></a></button>
+        <div class="footer-container">
+            <div class="footer-izq">
+
+            </div>
+            <div class="footer-centro">
+                <ul class="footer-list">
+                    <li class="footer-list-element"><a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAeZJREFUSEvNlU9O21AQxn/zFthxuqCbbhNOAJyAdtNtwwEqpTfgBoQTVOy6K5wAWHbVcALSExT1AoSKxDELD5rwXvXyB8dZRHQkK4o9nm++b958FjYcsuH6vA5Arnm7xB0LugfYVRUDRew6fSNbg/nEBQa55l1FvvvEa2Co6MKL9lwQA98GDp7/65eGNM5ikBmAB33cc5Q3wHVB0nkrMqwzI2OsyCWwW+L2YyYzACMtzgTtFCTtOsVzffyslCfAvaCHivxW5LwpSTc0NgMw1sktcJtJ+n6+85EWHQe7dr+EQVOSqwedfHTwA/iTSdoa66QPtDJJd14CUOA0k/QoJNypbicUP5cMuw/yTdG/DveuIVvnHuAgk/Rf4/MMVNGTpjR6AWCsExuwadxtSmI6Y2wEtWHeZJJ+iHKNQX0AX+hCkcNQPBQLpy1+tjaDkeY9QY5jynPS3cWM/0eAqdabk8jk8ENu+SFf2T2v/1fgV3yka0n0wjG10zHdgSgWtr0OQOWiQemNz9miTY9sHB6gnUnaXrpo3io+FSQ7dawiLu79qNoqIrPre2c0RivDF7+wba80u2iAwa5N+6EgS+1a0eBZ09+Vdh1aNSaCHslzgdYKCvdAv8T1an1wVuqxZsLrfJPXbLIy/QmHNEEovakTvgAAAABJRU5ErkJggg=="/></a></li>
+                    <li class="footer-list-element"><a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAZFJREFUSEvdVf9NwmAQfa+JtAUTdQLZQJhAnMA6gTqBOoEwgR2BDYQJdANhgzIBmAilmPTMmZb0JzRN+If78+vde9+9u++VOHDwwPg4MoK5yPkFudglm+ZY2DwJxAHQAeARHNo0B1q3lMBp0RzFGCmJVrL2QhjOKRuTMpKVrD8BXBd81xolfGnScnMEP7LpGAi/ACwIubNpK1AqEjll/BMBpwK68SWzHUii0g1gDpKSafuEvO+Q8JsQJ3m5LIFqd5sBGBGi556AXQBvOwjGTVo6m21sCXR4J/htGwgV7LLO+xDIoEW7X0pgIpjXAU7UpAas57ktqnt7BQthdLMbmCKItkS356xGJ7MmrXa2LmcV0abcA0gNqwJhTp6cRHrgi98T8KMCYDJlFsDsFLlAodktxe8TfK1KQshN0cMs7CAG1bVtYOMSonKVBiGPNu1hWUJhB5FMT3vmoK/2eRd4qoMIVE3qqoI04wjc25eb68AX/yGE0SNEnTEmm6oJAvi3DZv2XuCY+Mj+aPv0rPP94BL9AVa4mhnWxSLQAAAAAElFTkSuQmCC"/></a></li>
+                    <li class="footer-list-element"><a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAUpJREFUSEvtlU9Kw0AYxd9Lxc4Mgj2CdWGX6gmsN/AIrgUXggeoBxBEcO0RxBvoDerOhYt6Av+gySA0n0xIQsYEqxnrqt8qmWHe78v7XhJizsU566MGsGLXBd1Uk5O/gHuAWOw5gMNc+NRQHYdCSsCr2MEScF8VJGRNUz+GQEqAFTtI64C+pg6yyrPoXewFgYO84zNDdRTSvTvbNOQNAKmieggVrwESSYYAxG1M0XlZ4fLYXb/Jx1YH09Xq+pNIT8FuAtEwBcYR0rsmO7+mKBPP69ZQOSBisTcAdop1QkYCXgHo+aHgSLN74q9V7mKxPwG4oTthT7yQIWRXU7uGsmrzBLNGc22o9kIBpUgiyb6AlxXqxFD1gwApou0iAPmMngFkIXBlqEpnWllUFWgIwQLge7ywqOlT4aXkVxbNekXb7P//T79Nl9+d+QRvD9cZ144/EgAAAABJRU5ErkJggg=="/></a></li>
+                    <li class="footer-list-element"><a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAX5JREFUSEvVlcFVwkAURd9jkxAWagViBWIFYgWGCpQOtAJjB1CBUIFagdgBdmAHZkNINnzP50x0EhJMghyPf5kz8+68mfd/iD0X96yPvwFEEo8AHCdwhkdkuIvLjIMPkUMHySOAvhGdeXQvfg0QSTwHcGoLCjjp0Bk2hWQcRBJLkdAukEoAA7316Orb1Ko8YAbgvETh2aPr11IHsjFdSDIh5KpA5C2B02+SqIyDhSQ+IZoiuxqLq0hRTN8BHKQEQk7abOu3RrXRyflrEsh9h+2gkXregYosZdkVUPshdREScpZ3YZryAYA247jsAIWzaCHLgOCdtWlOyCCFGPEXAD1ds61PSoddJPETgEsLEhIcAaupgBqEtXhaZZBSgDml9kVmdPzwFrMEzsCO89ZxbSDqpKz5NngCTjt0rr9TWCEe5k1u7Phu2Tb26OradVX+4Wi6VmgFhOi4+OqTHOjVo5uO+nqAVEivzUXsr9DqE9K1rq+w4ys7qHCThUv+P+ATP3qNGXvmVYoAAAAASUVORK5CYII="/></a></li>
+                    <li class="footer-list-element"><a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAbVJREFUSEvdVctVAkEQrOLgfjioEagZkAEagWSgGagRiBFoCGsEQgYYgYYAEYAHll0PlK9hZ9+wLPjEz8F5by47M13dVdW9xC8v/nJ8/GOAsXSwh/c2oVNC/YjRwKdzqrxDqC1w0GTQ30T1GkVF4HtCHQAHxcMhANv+OgZg29YEQBIzvKkCrQFMNesSvN1R/JuY4YP/dgVgptmxwBcv86/iTHIEJ4ekVbRYKwBT5Qmhi69G9e8Lumsy6tYCpMoMef87AKZVzPBkDaBwxVNN8LctoLVnhM6c60qKUmUmzlUFYCFaoY3Z9Kg4H5l9I0bDVNk1gPtNNPkAFqDtX4wZlue+PgIfmwwu3d1UmSqJPccMT1dEruM/R3DoHJEq6wE4LwL1Y4bWJ7C+CZCPKwClDn4F1SzsTU9g0gBagkpnLDNjdw68ErJKFmB11X8GsLOhHL1/CmBuMBpcHwy5pIUCjQabO6WLzO+EEitRy9Hi5tKboAfXbGujYo5G1+vmUY6g5be+z1khsA1Bl1Sf0LXZt7aT3Ufz/Ry4bACD6piuimINCsxbDSDxA28F2FnZmof/+Jf5UzR9ABkytBm7ajKUAAAAAElFTkSuQmCC"/></a></li>
+                </ul>
+                <p class="subtitle">
+                    Luciano Sosa Dev
+                </p>
+            </div>
+            <div class="footer-der">
+
+            </div>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+</html>
