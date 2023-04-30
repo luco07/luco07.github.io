@@ -193,10 +193,9 @@ button{
 }
 /* C O N T A C T O */
 .contacto{
-    width: 90%;
+    width: 100%;
     text-align: center;
-    margin-left: 5%;	
-      
+    padding: 3%;      
 }
 .contacto h2{
     margin-bottom: 20px;
@@ -205,18 +204,13 @@ button{
     display: grid;
     grid-template-columns: 50% 50%;
 }
-.izq form .contacto-section{
-    display: block;
-    margin-top: 15px;
-    margin-left: 0px;
-}
 .izq form{
     margin: 0;
-
 }
-.izq form .contacto-section input{
+.izq form input{
     display: block;
-    border: solid 3px transparent;
+    border: solid 0.5px transparent;
+    margin-top: 15px;
 }
 #contacto-enviar{
     padding: 5px 15px;
@@ -230,11 +224,12 @@ button{
     background-color: #587669;
 }
 #mensaje{
-    height: 25vh;
+    height: 100px;
 }
 .iframe{
     width: 100%;
     height: 100%;
+    align-self: center;
 }
 /* F O O T E R */
 footer{
