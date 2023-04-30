@@ -30,7 +30,7 @@ body{
     background-color: #30423a;
     font-family: 'Montserrat', sans-serif;
     color: #f6fff8;
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 h1{
     font-size: 40px;
