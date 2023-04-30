@@ -330,7 +330,7 @@ footer button{
 	}
 }
 /* R E S P O N S I V E  */
-@media screen and (max-width: 1032px){
+@media screen and (max-width: 700px){
     /* NAV-RESPONSIVE */
     .nav-list{
         display: none;
@@ -396,13 +396,14 @@ footer button{
     }
      /* CONTACTO-RESPONSIVE */
     .contacto-contenido{
-      grid-template-columns: 1fr;
+      grid-template-columns: 100%;
     }
     .der{
-        width: fit-content;
+        box-sizing: border-box;
         margin-left: 22px
     }
     .izq #contacto-enviar{
+        
         margin-left: 22px
     }
 }
