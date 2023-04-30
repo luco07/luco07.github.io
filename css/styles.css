@@ -329,44 +329,6 @@ footer button{
 		transform: translateY(0px);
 	}
 }
-/* R E S P O N S I V E  */
-@media screen and (max-width: 700px){
-    /* NAV-RESPONSIVE */
-    .nav-list{
-        display: none;
-    }
-    nav .nav-responsive{
-        display: block;
-    }
-    .nav-list.responsive{
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 75px;
-        background-color: #526c61;
-        width: 180px;
-    }
-    nav.responsive ul{
-        display: block !important;
-    }
-    nav.responsive ul li{
-        border-bottom: 1px solid #f6fff8;
-
-    }
-    .portafolio .card-grupo .card{
-        grid-template-columns: 1fr;
-    }
-     /* CONTACTO-RESPONSIVE */
-    .contacto-contenido{
-        display: block;
-    }
-    .der{
-        width: fit-content;
-    }
-    .izq #contacto-enviar{
-        margin-left: 55px;
-    }
-}
 @media screen and (max-width: 700px){
     /* NAV-RESPONSIVE */
     .nav-list{
@@ -397,13 +359,14 @@ footer button{
      /* CONTACTO-RESPONSIVE */
     .contacto-contenido{
       grid-template-columns: 100%;
+      margin: 0;
+      padding: 0;
     }
     .der{
-        box-sizing: border-box;
-        margin-left: 22px
-    }
-    .izq #contacto-enviar{
         
-        margin-left: 22px
     }
+    .izq form input{
+        width: 200px;
+    }
+
 }
