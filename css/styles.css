@@ -207,7 +207,8 @@ button{
 }
 .izq form .contacto-section{
     display: block;
-    margin: 15px;
+    margin-top: 15px;
+    margin-left: 0px;
 }
 .izq form .contacto-section input{
     display: block;
