@@ -210,6 +210,10 @@ button{
     margin-top: 15px;
     margin-left: 0px;
 }
+.izq form{
+    margin: 0;
+
+}
 .izq form .contacto-section input{
     display: block;
     border: solid 3px transparent;
