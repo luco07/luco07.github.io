@@ -165,31 +165,31 @@ button{
     border-radius: 57px;
     font-size: 12px;
 }
-#html{
+.tecnologias #html{
   width: 100%;
   background-color: rgb(255, 153, 0)                         
 }
-#css{
+.tecnologias #css{
   width: 100%;
   background-color: blue 
 }
-#js{
+.tecnologias #js{
   width: 80% ;
   background-color: rgb(211, 211, 15)
 }
-#bs{
+.tecnologias #bs{
   width: 100%;
   background-color: blueviolet
 }
-#react{
+.tecnologias #react{
   width: 40%;
   background-color: lightseagreen
 }
-#git{
+.tecnologias #git{
   width: 70%;
   background-color: red
 }
-#tr{
+.tecnologias  #tr{
   width: 50%;
   background-color: black     
 }
