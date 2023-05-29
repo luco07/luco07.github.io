@@ -18,10 +18,10 @@ html{
 body::-webkit-scrollbar {
     width: 10px;
   }
-  body::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track {
     background: #587669;
   } 
-  body::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
     background-color: #f6fff8;
     border-radius: 20px;
 
@@ -178,6 +178,7 @@ button{
 }
 .portafolio .card-grupo .card img{
     width: 80%;
+    height: 60%;
     margin-top: 40px;
     margin-left: 10%;
 }
@@ -200,32 +201,6 @@ button{
 }
 .contacto h2{
     margin-bottom: 20px;
-}
-.contacto-contenido{
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-.izq form{
-    margin: 0;
-}
-.izq form input{
-    display: block;
-    border: solid 0.5px transparent;
-    margin-top: 15px;
-}
-#contacto-enviar{
-    padding: 5px 15px;
-    border-radius: 45px;
-    color: black;
-    font-size: 16px;
-    background-color: #385248;
-    cursor: pointer;
-}
-#contacto-enviar:hover{
-    background-color: #587669;
-}
-#mensaje{
-    height: 100px;
 }
 .iframe{
     width: 100%;
@@ -329,6 +304,7 @@ footer button{
 		transform: translateY(0px);
 	}
 }
+
 @media screen and (max-width: 700px){
     /* NAV-RESPONSIVE */
     .nav-list{
@@ -369,4 +345,23 @@ footer button{
         width: 200px;
     }
 
+}
+@media screen and (max-width: 350px){
+    .inicio-img{
+        width: 200px;
+        height: 200px;
+        border-radius: 450px;
+        border: 10px solid rgb(15, 60, 56) ;
+    }
+    .sobremi-text{
+        font-size: 16px;
+        width: 90%;
+        margin-left: 5%;
+        text-align: center;
+    }   
+}
+@media screen and (max-width: 500px){
+    .portafolio .card-grupo{
+        grid-template-columns: 1fr 1fr;
+    }
 }
