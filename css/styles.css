@@ -151,6 +151,51 @@ button{
 .sobremi-text strong{
     color: #14e0b4;
 }
+.tecnologia-contenido{
+    width: 70%;
+    margin-left: 15%;
+}
+.tecnologia {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 57px;
+    font-size: 12px;
+}
+
+#html{
+  width: 100%;
+  background-color: rgb(255, 153, 0)                         
+}
+#css{
+  width: 100%;
+  background-color: blue 
+}
+#js{
+  width: 80% ;
+  background-color: rgb(211, 211, 15)
+}
+#bs{
+  width: 100%;
+  background-color: blueviolet
+}
+#react{
+  width: 40%;
+  background-color: lightseagreen
+}
+#git{
+  width: 70%;
+  background-color: red
+}
+#tr{
+  width: 50%;
+  background-color: black     
+}
+
+
 /* P O R T A F O L I O */
 .portafolio{
     padding: 0;
@@ -338,13 +383,15 @@ footer button{
       margin: 0;
       padding: 0;
     }
-    .der{
-        
-    }
     .izq form input{
         width: 200px;
     }
-
+    .portafolio .card-grupo .card img{
+        width: 80%;
+        height: 50%;
+        margin-top: 40px;
+        margin-left: 10%;
+    }
 }
 @media screen and (max-width: 350px){
     .inicio-img{
@@ -364,4 +411,5 @@ footer button{
     .portafolio .card-grupo{
         grid-template-columns: 1fr 1fr;
     }
+
 }
