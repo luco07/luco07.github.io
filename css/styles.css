@@ -142,7 +142,41 @@ button{
 .inicio-list-element{
     display: none;
 }
-
+/* F O R M A C I O N E S */
+.formaciones{
+    height: 100vh;
+    min-height: 700px;
+    width: 80%;
+    margin-left: 10%;
+}
+.formaciones h2{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+.formaciones p{
+    text-align: left;
+}
+.empresas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.empresas div{
+    background-color: #f6fff8;
+    width: fit-content;
+    padding: 10px;
+}
+.empresas img{
+     width: 100px;
+     height: 100px;
+}
+.tecnologias div{
+    display: flex;
+}
+.tecnologias h2{
+    margin-top: 70px;
+    margin-bottom: 0;
+}
 /* P O R T A F O L I O */
 .portafolio{
     padding: 0;
@@ -151,7 +185,6 @@ button{
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 15%;
-
 }
 .portafolio h2{
     text-align: center;
